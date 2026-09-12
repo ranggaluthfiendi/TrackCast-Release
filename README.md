@@ -1,11 +1,11 @@
-# 🎵 TrackCast
+# TrackCast
 
 <p align="center">
   <img width="1280" height="760" alt="TrackCast Main Dashboard" src="https://github.com/user-attachments/assets/30d9d73c-ba51-4d08-ad64-32b13e9e77d1" />
 </p>
 
 <p align="center">
-  <strong>Interactive TikTok Live & YouTube Music Song Request Player with Synced Lyrics & OBS Overlays</strong>
+  <strong>Interactive TikTok Live & YouTube Music Song Request Player with Synced Lyrics, Video Player & OBS Overlays</strong>
 </p>
 
 <p align="center">
@@ -16,35 +16,37 @@
 
 ---
 
-## 📥 Download TrackCast for Windows
+## Download TrackCast for Windows
 
-Click the link below to get the latest official installer:
+Click the link below to get the official installer:
 
 👉 **[Download TrackCast Setup v1.2.0 (.exe)](https://github.com/ranggaluthfiendi/TrackCast-Release/releases/latest/download/TrackCast-Setup-1.2.0.exe)**
 
-*(Or visit all versions on the [Releases Page](https://github.com/ranggaluthfiendi/TrackCast-Release/releases))*
 
 ---
 
-## ✨ Features
+## Features
 
-* ☁️ **Google Drive Cloud Sync**: Seamlessly backup and restore your settings, playlists, blacklists, and song request queue to Google Drive.
-* 🔴 **Zero-Setup TikTok Live Connection**: Connect simply by entering your `@username`. No developer tokens or paid APIs required.
-* 🎧 **High-Quality YouTube Playback**: Instant search and automatic high-resolution audio queue playback.
-* 🎤 **Word-by-Word Synchronized Karaoke Lyrics**: Accurate real-time lyrics powered by NetEase, QQ Music, Kugou, and LRCLIB.
-* 🌐 **Dual Subtitle Multi-Language Translations**: Real-time translation to English, Indonesian, Japanese, Korean, and Chinese with Romaji support.
-* 🖥️ **6 Dedicated OBS & TikTok LIVE Studio Overlays**:
-  * **Overlay Lyrics** (`/overlay/lyrics`): Cinematic karaoke lyrics.
-  * **Overlay Queue** (`/overlay/queue`): Live request queue list with avatars.
-  * **Overlay Now Playing** (`/overlay/now-playing`): Sleek album card with rotating vinyl disc.
-  * **Overlay Alert** (`/overlay/alert`): Toast notifications when songs are added.
-  * **Overlay Compact Ticker** (`/overlay/compact`): Bottom ticker marquee.
-  * **Overlay Timeline** (`/overlay/timeline`): Previous / Now / Next preview cards.
-* 🛡️ **Anti-Spam & Fair Queue System**: Built-in viewer request limits, cooldowns, and customizable term/song/user blacklists.
+- ☁️ **Google Drive Cloud Sync**: Backup and restore settings, playlists, blacklists, and song request history directly to your Google Account.
+- 🌐 **Cloud Widgets Relay**: Zero-configuration HTTPS overlay URLs with instant SSL certificates for **TikTok LIVE Studio** and **OBS Studio**.
+- 🔴 **Zero-Setup TikTok Live Connection**: Connect simply by entering your `@username` without developer tokens or paid APIs.
+- 🎧 **High-Quality Playback**: Fast YouTube search, auto-resolution management, and clean borderless video player.
+- 🎤 **Word-by-Word Synced Lyrics**: Real-time karaoke lyrics powered by NetEase, QQ Music, Kugou, and LRCLIB with dual subtitle translations (English, Indonesian, Japanese, Korean, Chinese, and Romaji).
+- 🖥️ **7 Dedicated Stream Overlays**:
+  - **Video Player** (`/overlay/video`): Borderless live video overlay with synced progress.
+  - **Lyrics** (`/overlay/lyrics`): Real-time karaoke lyrics with particle effects.
+  - **Queue** (`/overlay/queue`): Live request queue list with avatars.
+  - **Now Playing** (`/overlay/now-playing`): Album art card with rotating vinyl disc.
+  - **Alert Toast** (`/overlay/alert`): Notification toast when new songs are requested.
+  - **Compact Ticker** (`/overlay/compact`): Bottom marquee bar.
+  - **Timeline** (`/overlay/timeline`): Previous, current, and upcoming track cards.
+- 🎨 **Studio Overlay Designer**: Interactive live stage preview to customize themes, colors, fonts, borders, and aspect ratios.
+- 🛡️ **Anti-Spam & Fair Queue**: Viewer request limits, cooldown timers, permissions (followers, subscribers, moderators), and customizable blacklists.
+- 🌐 **Bilingual Support**: Native English (EN) and Indonesian (ID) language support.
 
 ---
 
-## 📸 Interface Showcase
+## Interface Showcase
 
 <table width="100%">
   <tr>
@@ -71,37 +73,36 @@ Click the link below to get the latest official installer:
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start
 
 1. **Install Application**: Download and run `TrackCast-Setup-1.2.0.exe`.
-2. **Start Live Stream**: Launch your stream in **TikTok LIVE Studio** or mobile app.
-3. **Connect**: Open TrackCast, enter your TikTok username in the top header, and click **Connect Live**.
-4. **Setup OBS / TikTok LIVE Studio Overlay**:
-   * Open OBS Studio $\rightarrow$ Add **Browser Source** (or *Custom Link* in TikTok LIVE Studio).
-   * Enter the widget URL from the Links Hub
-   * Set dimensions to `1920 x 1080` (or `1080 x 1920` for portrait mode).
+2. **Start Live Stream**: Start streaming in **TikTok LIVE Studio** or mobile app.
+3. **Connect**: Open TrackCast, enter your TikTok username in the top bar, and click **Connect Live**.
+4. **Setup Overlay**:
+   - In OBS Studio or TikTok LIVE Studio, add a **Browser Source** (or *Custom Link*).
+   - Paste the widget URL from the **Links Hub** or **Studio Designer**.
+   - Set resolution to `1920 x 1080` (landscape) or `1080 x 1920` (portrait).
 
 ---
 
-## 💬 Viewer Chat Commands
-
-Viewers in your TikTok Live can interact directly through chat:
+## Viewer Chat Commands
 
 | Command | Example | Description |
 |---|---|---|
-| `!play [Title]` / `!p [Title]` | `!p Night Dancer` | Searches YouTube and adds the song to queue |
-| `!p [YouTube Link]` | `!p https://youtu.be/...` | Plays direct YouTube / YouTube Music URL |
-| `!cancel` / `!batal` | `!cancel` | Removes the viewer's latest song request |
+| `!play [Title]` / `!p [Title]` | `!p Night Dancer` | Searches and adds song to queue |
+| `!play [YouTube Link]` | `!p https://youtu.be/...` | Plays direct YouTube link |
+| `!skip` / `!next` | `!skip` | Votes to skip the current song |
+| `!cancel` / `!batal` | `!cancel` | Removes the viewer's latest request |
 
 ---
 
-## 🔒 Privacy & Terms
+## Privacy & Terms
 
 - [Privacy Policy](https://github.com/ranggaluthfiendi/TrackCast-Release/blob/main/PRIVACY.md)
 - [Terms of Service](https://github.com/ranggaluthfiendi/TrackCast-Release/blob/main/TERMS.md)
 
 ---
 
-## 📜 License
+## License
 
-Distributed under the **MIT License**. Created with ❤️ by **TrackCast Studio**.
+Distributed under the **MIT License**. Created by **TrackCast Studio**.
